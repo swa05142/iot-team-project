@@ -1,0 +1,162 @@
+<html lang="kor">
+    <head>
+        <style>
+            @font-face {
+    font-family: 'KOTRAHOPE';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+html{
+    font-family: 'KOTRAHOPE';
+}
+            #body{
+    position: absolute;
+    height: 812px;
+    width: 375px;
+    background-color: E9FFFD;
+    margin: 0px;
+}
+#header{
+    position: absolute;
+    width: 375px;
+    height: 64px;
+    background-color: 33D1C1;
+}
+#jodo{
+    position: absolute;
+    width: 100px;
+    height: 38px;
+    background-color: 33D1C1;
+    left : 18px;
+    top : 80px;
+    border-radius: 10px;
+}
+
+#temp{
+    position: absolute;
+    width: 100px;
+    height: 38px;
+    background-color: 33D1C1;
+    top : 80px;
+    left : 138px;
+    border-radius: 10px;
+}
+
+#seupdo{
+    position: absolute;
+    width: 100px;
+    height: 38px;
+    background-color: 33D1C1;
+    top : 80px;
+    left : 258px;
+    border-radius: 10px;
+}
+
+#footer{
+    position: absolute;
+    width: 375px;
+    height: 129px;
+    left: 0px;
+    top: 683px;
+    background-color: 33D1C1;
+}
+
+
+#light{
+    position: absolute;
+    width: 340px;
+    height: 66px;
+    left: 18px;
+    top: 201px;
+    background-color: 33D1C1;
+    border-radius: 10px;
+}
+
+#minute{
+    position: absolute;
+    width: 340px;
+    height: 66px;
+    left: 18px;
+    top: 350px;
+    background-color: 33D1C1;
+    border-radius: 10px;
+}
+#counter-display{
+    position: absolute;
+    width: 340px;
+    height: 66px;
+    left: 18px;
+    top: 500px;
+    background-color: 33D1C1;
+    border-radius: 10px;
+}
+
+#submit{
+    position: absolute;
+    width: 340px;
+    height: 38px;
+    left: 18px;
+    top: 630px;
+    background-color: 33D1C1;
+    border-radius: 10px;
+}
+#submit a{
+    position: absolute;
+    left:140px;
+}
+a{
+    position: absolute;
+    text-align: center;
+    left:40px;
+    top: 10px;
+}
+input{
+    width :300px;
+    height: 30px;
+    position: absolute;
+    left:20px;
+    top:20px;
+}
+#submit1{
+    top:5px;
+    background-color: 33D1C1;
+    border:0;
+}
+
+        </style>
+    </head>
+    <body>
+        <div id = "header">
+
+        </div>
+        <div id = "section">
+            <div id = "jodo">
+                <a>@light@</a>
+             </div>
+             <div id = "seupdo">
+                 <a>@humi@</a>
+             </div>
+             <div id = "temp">
+                 <a>@temp@</a>
+             </div>
+        <form action = "post_check" method = "get">
+            <div id = "light">
+                <input type="text" name= "light" id ="lightinput" placeholder="Input between 50~ 255...">
+            </div>
+            <div id = "minute">
+                <input type="text" name = "minute" id ="minuteinput" placeholder="Input between 0~180...">
+            </div>
+            <div id = "counter-display">
+                <input type="text" name = "volume" id ="volinput" placeholder="Volume = Input between 0~ 30...">
+            </div>
+            <div id = "submit" value = "submiet">
+                <input id = "submit1" type="submit" value="submit">
+            </div>
+        </form>
+        </div>
+        <div id = "footer">
+            
+        </div>
+    </body>
+</html>

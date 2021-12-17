@@ -1,0 +1,149 @@
+<html lang="kor">
+    <head>
+        <meta http-equiv="content-type" content="main/html; charset=UTF-8">
+        <style>
+            #body{
+    position: absolute;
+    height: 812px;
+    width: 375px;
+    background-color: E9FFFD;
+    margin: 0px;
+}
+@font-face {
+    font-family: 'KOTRAHOPE';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+html{
+    font-family: 'KOTRAHOPE';
+}
+#header{
+    position: absolute;
+    width: 375px;
+    height: 64px;
+    background-color: 33D1C1;
+}
+#jodo{
+    position: absolute;
+    width: 100px;
+    height: 38px;
+    background-color: 33D1C1;
+    left : 18px;
+    top : 80px;
+    border-radius: 10px;
+}
+
+#temp{
+    position: absolute;
+    width: 100px;
+    height: 38px;
+    background-color: 33D1C1;
+    top : 80px;
+    left : 138px;
+    border-radius: 10px;
+}
+
+#seupdo{
+    position: absolute;
+    width: 100px;
+    height: 38px;
+    background-color: 33D1C1;
+    top : 80px;
+    left : 258px;
+    border-radius: 10px;
+}
+
+#select{
+    position: absolute;
+    width: 340px;
+    height: 172px;
+    left: 18px;
+    top:171px;
+    background-color: 33D1C1;
+    border-radius: 10px;
+}
+
+#auto{
+    position: absolute;
+    width: 340px;
+    height: 172px;
+    left: 18px;
+    top:382px;
+    background-color: 33D1C1;
+    border-radius: 10px;
+}
+
+#footer{
+    position: absolute;
+    width: 375px;
+    height: 129px;
+    left: 0px;
+    top: 683px;
+    background-color: 33D1C1;
+}
+a{
+    position: absolute;
+    text-align: center;
+    left:40px;
+    top: 10px;
+}
+#select{
+    font-size: 50px;
+
+}
+#select a{
+    position: absolute;
+    left : 100px;
+    top: 50px;
+}   
+#auto{
+    font-size: 50px;
+
+}
+#auto a{
+    position: absolute;
+    left : 100px;
+    top: 50px;
+}   
+        </style>
+    </head>
+    <body>
+        <div id = "body1">
+        <div id = "header">
+
+        </div>
+        <div id = "section">
+            <div id = "jodo">
+               <a>@light@</a>
+            </div>
+            <div id = "seupdo">
+                <a>@humi@</a>
+            </div>
+            <div id = "temp">
+                <a>@temp@</a>
+            </div>
+            <div id = "select" onclick = "movepage()">
+                <a>직접 선택</a>
+
+            </div>
+            <script type="text/javascript">
+                function movepage(){
+                    location.href = "select.html";
+                }
+            </script>
+            <div id = "auto"  onclick = "movepage1()">
+                <a>자동 선택</a>
+            </div>
+            <script type="text/javascript">
+                function movepage1(){
+                    location.href = "auto.html";
+                }
+            </script>
+        </div>
+        <div id = "footer">
+
+        </div>
+    </div>
+    </body>
+</html>
